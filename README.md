@@ -13,10 +13,15 @@ Note: the generated deb will be in the directory above that containing Autobuild
 Delta hoofd frequentie
 [Main Frequency]
 	DELIVERY_SYSTEM = DVBC/ANNEX_A
+	
 	FREQUENCY = 538000000
+	
 	SYMBOL_RATE = 6875000
+	
 	INNER_FEC = NONE
+	
 	MODULATION = QAM/64
+	
 	
  Voor PIcons > set 'digest+plain' HTTP authentication
   
