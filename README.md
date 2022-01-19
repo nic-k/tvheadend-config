@@ -2,11 +2,13 @@
 
 --Build--
 
+```
 git clone https://github.com/tvheadend/tvheadend
 
 apt install dependencies
 
 AUTOBUILD_CONFIGURE_EXTRA="--enable-or-disable-bundle" ./Autobuild.sh 
+```
 
 Note: the generated deb will be in the directory above that containing Autobuild.sh (i.e. outside of the tvheadend directory).
 
