@@ -1,13 +1,28 @@
 # TVheadend
 
-Building
+TVheadend clonen en compileren
 ```
 git clone https://github.com/tvheadend/tvheadend
 
-apt install dependencies
+sudo apt install 'dependencies needed' (nog invullen)
+
+./Autobuild.sh 
+```
+
+Om vaapi transcoding te installer is libva-dev nodig
+```
+sudo apt install libva-dev
+```
+
+Om opties in of uit schakelen kan het volgende commando worden gebruikt
+```
+git clone https://github.com/tvheadend/tvheadend
+
+sudo apt install 'dependencies needed' (nog invullen)
 
 AUTOBUILD_CONFIGURE_EXTRA="--enable-or-disable-bundle" ./Autobuild.sh 
 ```
+
 Note: Het deb package staat een folder hoger dan autobuild
 
 Delta hoofd frequentie
