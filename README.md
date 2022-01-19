@@ -101,10 +101,9 @@ configuration > general > base > HTTP authentication: 'digest+plain'
 Stel daarna het picons path in en geef de juiste rechten
 
 ```
-Console:
 sudo mkdir /home/hts/picons
 sudo chown hts:hts /home/hts/picons/
-TVheadend:
+
 configuration > general > base > Picon path: 'file:///home/hts/picons'  
 ```
 
