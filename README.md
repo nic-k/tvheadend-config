@@ -20,7 +20,7 @@ git clone https://github.com/tvheadend/tvheadend
 
 sudo apt install 'dependencies needed' (nog invullen)
 
-AUTOBUILD_CONFIGURE_EXTRA="--enable-or-disable-bundle" ./Autobuild.sh 
+AUTOBUILD_CONFIGURE_EXTRA="--disable-libvpx --disable-libvpx_static" ./Autobuild.sh 
 ```
 
 Note: Het deb package staat een folder hoger dan autobuild
