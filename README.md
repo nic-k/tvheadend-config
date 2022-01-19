@@ -107,9 +107,7 @@ sudo chown hts:hts /home/hts/picons/
 configuration > general > base > Picon path: 'file:///home/hts/picons'  
 ```
 
-
-
-Install Picons
+Download Picons 
 ```
 # Ubuntu, Bash on Ubuntu on Windows
 sudo apt-get install git binutils pngquant imagemagick librsvg2-bin jq
@@ -118,3 +116,63 @@ sudo apt-get install git binutils pngquant imagemagick librsvg2-bin jq
 git clone https://github.com/picons/picons.git ~/picons
 ```
 
+Stel build-input in
+
+Maak nieuw bestand in build-input folder met naam tvheadend.serverconf.
+
+```
+# hostname or ip address of tvheadend server (default: "localhost")
+TVH_HOST="localhost"
+# port of tvheadend API (default: 9981)
+TVH_PORT="9981"
+# tvheadend user name
+TVH_USER="jamie"
+# tvheadend password of above user
+TVH_PASS=""
+```
+
+Stel build-output in
+
+Maak nieuw bestand in build-output folder met naam backgrounds.conf.
+
+```
+#################################################################
+### <resolution>;<resolution-padding>;<logotype>;<background> ###
+#################################################################
+
+256x256;256x256;light;transparent
+```
+
+Start 1-build-servicelist.sh. Kies 1 en enter.
+
+```
+$ bash 1-build-servicelist.sh
+
+Which style are you going to build?
+1) Service Reference
+2) Service Name
+#?
+```
+
+Start 2-build-picons.sh. Kies 1 en enter.Aqqqq
+
+```
+$ bash 2-build-picons.sh
+
+Log file located at: /tmp/tmp.cVWBKTq9Yh.picons.log
+
+16:06:23 - No "svgconverter.conf" file found in "build-input", using default file!
+Which style are you going to build?
+1) Service Reference         3) Service Name
+2) Service Reference (Full)  4) Service Name (Full)
+#?
+```
+
+De icons staan in een binaries-srp.tar in de build-output folder. Pak de hardlink versie uit en kopieer deze naar de tvheadend picons folder
+
+```
+cd build-output/binaries-srp/
+tar xvf srp.256x256-256x256.light.on.transparent_2022-01-19--18-40-56.hardlink.tar.xz
+cd srp.256x256-256x256.light.on.transparent_2022-01-19--18-40-56/
+sudo cp * /home/hts/picons
+sudo chown hts:hts /home/hts/picons/*
