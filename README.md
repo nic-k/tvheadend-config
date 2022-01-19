@@ -11,17 +11,14 @@ AUTOBUILD_CONFIGURE_EXTRA="--enable-or-disable-bundle" ./Autobuild.sh
 Note: the generated deb will be in the directory above that containing Autobuild.sh (i.e. outside of the tvheadend directory).
 
 Delta hoofd frequentie
+```
 [Main Frequency]
 	DELIVERY_SYSTEM = DVBC/ANNEX_A
-	
 	FREQUENCY = 538000000
-	
 	SYMBOL_RATE = 6875000
-	
 	INNER_FEC = NONE
-	
 	MODULATION = QAM/64
-	
+```
 	
  Voor PIcons > set 'digest+plain' HTTP authentication
   
@@ -34,7 +31,7 @@ Port: 9000
 Listen: Standard / auto
 
 # OScam
-
+```
 oscam.conf
 
 [global]
@@ -56,7 +53,8 @@ boxtype                       = pc
 [webif]
 httpport                      = 8888
 httpallowed                   = 127.0.0.1,192.168.0.0-192.168.255.255,10.0.0.0-10.255.255.255,255.255.255.255
-
+```
+```
 oscam.server
 
 [reader]
@@ -72,7 +70,8 @@ mhz                           = 600
 cardmhz                       = 600
 group                         = 1
 emmcache                      = 1,3,2,0
-
+```
+```
 oscam.user
 
 [account]
@@ -89,4 +88,4 @@ user                          = tvheadend1
 pwd                           = tvheadend1
 au                            = Reader-0
 group                         = 1
-
+```
