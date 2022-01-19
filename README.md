@@ -23,12 +23,13 @@ Delta hoofd frequentie
  Voor PIcons > set 'digest+plain' HTTP authentication
   
 --CA setup--
-
+```
 Type: DVBapi
 Mode: Oscam net protocol 
 IP: fill in hostname or ip
 Port: 9000
 Listen: Standard / auto
+```
 
 # OScam
 ```
