@@ -1,7 +1,6 @@
 # TVheadend
 
---Build--
-
+Building
 ```
 git clone https://github.com/tvheadend/tvheadend
 
@@ -9,8 +8,7 @@ apt install dependencies
 
 AUTOBUILD_CONFIGURE_EXTRA="--enable-or-disable-bundle" ./Autobuild.sh 
 ```
-
-Note: the generated deb will be in the directory above that containing Autobuild.sh (i.e. outside of the tvheadend directory).
+Note: Het deb package staat een folder hoger dan autobuild
 
 Delta hoofd frequentie
 ```
@@ -22,7 +20,7 @@ Delta hoofd frequentie
 	MODULATION = QAM/64
 ```
   
---CA setup--
+CA setup
 ```
 Type: DVBapi
 Mode: Oscam net protocol 
@@ -32,9 +30,9 @@ Listen: Standard / auto
 ```
 
 # OScam
-```
-oscam.conf
 
+oscam.conf
+```
 [global]
 logfile                       = stdout
 
@@ -55,9 +53,9 @@ boxtype                       = pc
 httpport                      = 8888
 httpallowed                   = 127.0.0.1,192.168.0.0-192.168.255.255,10.0.0.0-10.255.255.255,255.255.255.255
 ```
-```
-oscam.server
 
+oscam.server
+```
 [reader]
 label                         = Reader-0
 description                   = Delta DVB-C
@@ -72,9 +70,9 @@ cardmhz                       = 600
 group                         = 1
 emmcache                      = 1,3,2,0
 ```
-```
-oscam.user
 
+oscam.user
+```
 [account]
 user                          = tvheadend
 pwd                           = tvheadend
