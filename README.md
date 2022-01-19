@@ -16,10 +16,6 @@ sudo apt install libva-dev
 
 Om opties in of uit schakelen kan het volgende commando worden gebruikt
 ```
-git clone https://github.com/tvheadend/tvheadend
-
-sudo apt install 'dependencies needed' (nog invullen)
-
 AUTOBUILD_CONFIGURE_EXTRA="--disable-libvpx --disable-libvpx_static" ./Autobuild.sh 
 ```
 
