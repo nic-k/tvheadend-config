@@ -21,8 +21,6 @@ Delta hoofd frequentie
 	INNER_FEC = NONE
 	MODULATION = QAM/64
 ```
-	
- Voor PIcons > set 'digest+plain' HTTP authentication
   
 --CA setup--
 ```
@@ -92,3 +90,20 @@ pwd                           = tvheadend1
 au                            = Reader-0
 group                         = 1
 ```
+
+# Picons
+
+In TVheadend moet de inlog methode worden veranderd voor Picons 
+```
+configuration > general > base > HTTP authentication: 'digest+plain' 
+```
+
+Install Picons
+```
+# Ubuntu, Bash on Ubuntu on Windows
+sudo apt-get install git binutils pngquant imagemagick librsvg2-bin jq
+
+# Ubuntu
+git clone https://github.com/picons/picons.git ~/picons
+```
+
