@@ -98,6 +98,18 @@ In TVheadend moet de inlog methode worden veranderd voor Picons
 configuration > general > base > HTTP authentication: 'digest+plain' 
 ```
 
+Stel daarna het picons path in en geef de juiste rechten
+
+```
+Console:
+sudo mkdir /home/hts/picons
+sudo chown hts:hts /home/hts/picons/
+TVheadend:
+configuration > general > base > Picon path: 'file:///home/hts/picons'  
+```
+
+
+
 Install Picons
 ```
 # Ubuntu, Bash on Ubuntu on Windows
