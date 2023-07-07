@@ -51,6 +51,8 @@ Listen: Standard / auto
 
 # OScam
 
+Installeer oscam volgens instructies https://sabrnet.wzk.cz/2019/02/oscam-installation-on-raspberry-pi-raspbian-stretch-debian-or-ubuntu/
+
 oscam.conf
 ```
 [global]
