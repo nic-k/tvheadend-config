@@ -1,10 +1,19 @@
 # TVheadend
 
 TVheadend clonen en compileren
+
+Info: https://tvheadend.org/boards/4/topics/24116
+
 ```
 git clone https://github.com/tvheadend/tvheadend
 
-sudo apt install 'dependencies needed' (nog invullen)
+sudo apt install build-essential git ccache libpcre2-dev pkg-config libssl-dev bzip2 \
+wget libavahi-client-dev zlib1g-dev libavcodec-dev libavutil-dev libavformat-dev \
+libswscale-dev libavresample-dev gettext cmake libiconv-hook-dev liburiparser-dev \
+debhelper libcurl4-gnutls-dev python-minimal libdvbcsa-dev python-requests \
+dvb-apps libva-dev libva-drm1 libva-x11-1 \
+
+sudo apt install python-is-python3
 
 ./Autobuild.sh 
 ```
