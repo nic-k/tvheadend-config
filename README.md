@@ -7,20 +7,11 @@ Info: https://tvheadend.org/boards/4/topics/24116
 ```
 git clone https://github.com/tvheadend/tvheadend
 
-sudo apt install build-essential git ccache libpcre2-dev pkg-config libssl-dev bzip2 \
-wget libavahi-client-dev zlib1g-dev libavcodec-dev libavutil-dev libavformat-dev \
-libswscale-dev libavresample-dev gettext cmake libiconv-hook-dev liburiparser-dev \
-debhelper libcurl4-gnutls-dev python-minimal libdvbcsa-dev python-requests \
-dvb-apps libva-dev libva-drm1 libva-x11-1 \
+sudo apt install build-essential git ccache libpcre2-dev pkg-config libssl-dev bzip2 wget libavahi-client-dev zlib1g-dev libavcodec-dev libavutil-dev libavformat-dev libswscale-dev gettext cmake libiconv-hook-dev liburiparser-dev debhelper libcurl4-gnutls-dev python-is-python3 libdvbcsa-dev
 
-sudo apt install python-is-python3
+sudo apt install dvb-apps libva-dev libva-drm2 libva-x11-2
 
 ./Autobuild.sh 
-```
-
-Om vaapi transcoding te installer is libva-dev nodig
-```
-sudo apt install libva-dev
 ```
 
 Om opties in of uit schakelen kan het volgende commando worden gebruikt
