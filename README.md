@@ -153,9 +153,9 @@ TVH_USER="jamie"
 TVH_PASS=""
 ```
 
-Stel build-output in
+Stel grote van incons in
 
-Maak nieuw bestand in build-output folder met naam backgrounds.conf.
+Maak nieuw bestand in build-input folder met naam backgrounds.conf.
 
 ```
 #################################################################
@@ -176,7 +176,7 @@ Which style are you going to build?
 #?
 ```
 
-Start 2-build-picons.sh. Kies 1 en enter.Aqqqq
+Start 2-build-picons.sh. Kies 1 en enter.
 
 ```
 $ bash 2-build-picons.sh
