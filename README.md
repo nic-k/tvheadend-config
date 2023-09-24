@@ -44,6 +44,8 @@ Listen: Standard / auto
 
 Installeer oscam volgens instructies https://sabrnet.wzk.cz/2019/02/oscam-installation-on-raspberry-pi-raspbian-stretch-debian-or-ubuntu/
 
+Voor raspberry pi: https://www.linuxsat-support.com/thread/20212-oscam-server-setup-guide-raspberry-pi-from-scratch/
+
 ```
 sudo apt install subversion cmake build-essential libssl-dev libpcsclite1 libpcsclite-dev dialog libusb-1.0-0-dev
 svn checkout http://www.streamboard.tv/svn/oscam/trunk oscam-svn
